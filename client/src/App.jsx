@@ -1,10 +1,8 @@
 import "./App.css";
-import Home from "./pages/Home";
+import ArticlesIndex from "./pages/ArticlesIndex";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <Home />;
+  return <ArticlesIndex />;
 }
 
 export default App;
