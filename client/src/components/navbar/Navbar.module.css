@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  background-color: #005d72;
+  display: flex;
+  color: white;
+}
+.icon {
+  padding: 0.5em 1em;
+}
+.icon span {
+  font-size: 3em;
+  font-weight: 700;
+}
+.navItems {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navItem {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navItem:active {
+  background-color: #005365;
+}
+.accountDropdown {
+  width: 10%;
+
+  display: flex;
+  align-items: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header :nth-child(1) {
+  font-size: 2em;
+  cursor: pointer;
+}
+.header :nth-child(2) {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.navItems a:link,
+.accountDropdown a:link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.navItems a:visited,
+.accountDropdown a:visited {
+  color: white;
+}
+.navItems a:active,
+.accountDropdown a:active {
+  color: white;
+}
+.navItems a:hover,
+.accountDropdown a:hover {
+  color: white;
+}
