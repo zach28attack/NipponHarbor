@@ -1,0 +1,6 @@
+
+#68a1c4, grey-blue
+#74c5e2, light grey-blue
+#80e8ff, light-blue
+#0085a3, dim-blue
+#005d72  dark-blue
