@@ -1,8 +1,8 @@
 import "./App.css";
-import ArticlesIndex from "./pages/ArticlesIndex";
+import ArticleIndex from "./pages/ArticleIndex";
 
 function App() {
-  return <ArticlesIndex />;
+  return <ArticleIndex />;
 }
 
 export default App;
