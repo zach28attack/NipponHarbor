@@ -6,25 +6,25 @@
 
 ## Planned Tech
 
-### Frontend
+#### Frontend
 
-    - React
-    - Framer Motion
+- React
+- Framer Motion
 
-### Backend
+#### Backend
 
-    - Node.js
-    - MongoDB
+- Node.js
+- MongoDB
 
-### Web-Scraping(for article agregation)
+#### Web-Scraping(for article agregation)
 
-    - Python
+- Python
 
-### Deployment
+#### Deployment
 
-    - AWS
-    - Docker
+- AWS
+- Docker
 
-### Mobile Deployment
+#### Mobile Deployment
 
-    - React Native
+- React Native
