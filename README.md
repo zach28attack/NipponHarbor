@@ -8,23 +8,23 @@
 
 ### Frontend
 
-- React
-- Framer Motion
+    - React
+    - Framer Motion
 
 ### Backend
 
-- Node.js
-- MongoDB
+    - Node.js
+    - MongoDB
 
 ### Web-Scraping(for article agregation)
 
-- Python
+    - Python
 
 ### Deployment
 
-- AWS
-- Docker
+    - AWS
+    - Docker
 
 ### Mobile Deployment
 
-- React Native
+    - React Native
