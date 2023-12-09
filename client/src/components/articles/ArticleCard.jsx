@@ -7,7 +7,7 @@ export default function ArticleCard({article}) {
       <img src={article.img} />
       <div className={Class.content}>
         <header>
-          <Link to="/articles">
+          <Link to="/articles/show">
             <span>{article.title}</span>
           </Link>
         </header>

@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import ArticleIndex from "./pages/ArticleIndex";
+import ArticleShow from "./pages/ArticleShow.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
         path: "/articles",
         element: <ArticleIndex />,
       },
+      {path: "/articles/show", element: <ArticleShow />},
       {
         path: "/flashcards",
         element: "",
