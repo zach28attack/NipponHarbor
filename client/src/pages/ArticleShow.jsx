@@ -1,6 +1,7 @@
 import Class from "./ArticleShow.module.css";
 import {useNavigate} from "react-router";
 import {MdArrowBackIosNew} from "react-icons/md";
+import MiniArticleCard from "../components/articles/MiniArticleCard";
 
 export default function ArticleShow() {
   const article = {
@@ -41,6 +42,13 @@ export default function ArticleShow() {
           <p>{summary}</p>
           <p>{body}</p>
         </section>
+      </div>
+      <div className={Class.miniCardsList}>
+        <MiniArticleCard img={img} title={title} />
+        <MiniArticleCard img={img} title={title} />
+        <MiniArticleCard img={img} title={title} />
+        <MiniArticleCard img={img} title={title} />
+        <MiniArticleCard img={img} title={title} />
       </div>
     </div>
   );
