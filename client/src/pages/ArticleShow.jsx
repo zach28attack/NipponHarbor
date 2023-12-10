@@ -1,5 +1,6 @@
 import Class from "./ArticleShow.module.css";
 import {useNavigate} from "react-router";
+import {MdArrowBackIosNew} from "react-icons/md";
 
 export default function ArticleShow() {
   const article = {
@@ -28,6 +29,7 @@ export default function ArticleShow() {
   return (
     <div className={Class.container}>
       <button onClick={goBackHandler} className={Class.backButton}>
+        <MdArrowBackIosNew />
         Go Back
       </button>
       <div className={Class.article}>
