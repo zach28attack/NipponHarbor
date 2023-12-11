@@ -2,12 +2,14 @@ import Class from "./Navbar.module.css";
 import {Link} from "react-router-dom";
 import {MdAccountBox} from "react-icons/md";
 import {IoIosArrowDown} from "react-icons/io";
+import {GiShoonerSailboat} from "react-icons/gi";
 
 export default function Navbar() {
   return (
     <div className={Class.container}>
       <div className={Class.icon}>
-        <span>NipponHarbor</span>
+        <span>NipponHarbor </span>
+        <GiShoonerSailboat />
       </div>
       <div className={Class.navItems}>
         <Link to="/articles" className={Class.navItem}>
