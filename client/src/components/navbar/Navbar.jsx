@@ -10,12 +10,13 @@ export default function Navbar() {
         <span>NipponHarbor</span>
       </div>
       <div className={Class.navItems}>
-        <div className={Class.navItem}>
-          <Link to="/articles">Articles</Link>
-        </div>
-        <div className={Class.navItem}>
-          <Link to="/">Flashcards</Link>
-        </div>
+        <Link to="/articles" className={Class.navItem}>
+          Articles
+        </Link>
+
+        <Link to="/" className={Class.navItem}>
+          Flashcards
+        </Link>
       </div>
       <div className={Class.accountDropdown}>
         <div className={Class.header}>
