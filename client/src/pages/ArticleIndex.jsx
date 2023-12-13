@@ -1,5 +1,6 @@
 import ArticleCard from "../components/articles/ArticleCard";
 import Class from "./ArticleIndex.module.css";
+import {getArticles} from "../../apis/articles";
 
 export default function ArticlesIndex() {
   const article = {
@@ -9,6 +10,9 @@ export default function ArticlesIndex() {
     date: "12月8日 4時39分",
     category: "Politics",
   };
+
+  getArticles();
+
   return (
     <div className={Class.container}>
       <ArticleCard article={article} />
