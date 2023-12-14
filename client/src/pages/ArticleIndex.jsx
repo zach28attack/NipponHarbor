@@ -1,6 +1,6 @@
 import ArticleCard from "../components/articles/ArticleCard";
 import Class from "./ArticleIndex.module.css";
-import {getArticles} from "../../apis/articles";
+import {getArticles} from "../../apis/ArticlesAPI";
 import {useEffect, useState} from "react";
 
 export default function ArticlesIndex() {
@@ -12,7 +12,6 @@ export default function ArticlesIndex() {
     if (data) {
       setArticles(data);
       setFinishLoading(true);
-      console.log("done loading", data);
     }
   };
 
