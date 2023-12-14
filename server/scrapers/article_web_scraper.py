@@ -25,9 +25,10 @@ def get_article_headlines():
       'date': '',
     }
     get_article_content(obj)
-
+  print('Writing to json...')
   with open('articles.json', 'w') as json_file:
     json.dump(news_list, json_file)
+  print('Saved.')
 
 
 def get_article_content(obj):
@@ -35,14 +36,16 @@ def get_article_content(obj):
   response = requests.get(article_url)
   soup = BeautifulSoup(response.content.decode('utf-8'), 'lxml')
   date = soup.find('time')
+  content = soup.find('div', {'class':'content--detail-body'})
+  
   if date:
     obj['date'] = date.text
 
-  content = soup.find('div', {'class':'content--detail-body'})
   if content:
     obj['content'] = content.text
 
-  news_list.append(obj)
+  if obj['content'] != '':
+    news_list.append(obj)
   
 
 get_article_headlines()
