@@ -10,7 +10,7 @@ exports.getArticles = async (req, res) => {
   //     console.error(err);
   //     return;
   //   }
-  fs.readFile("articles.json", "utf8", (err, data) => {
+  fs.readFile("../articles.json", "utf8", (err, data) => {
     if (err) {
       console.error(err);
       res.status(500);
