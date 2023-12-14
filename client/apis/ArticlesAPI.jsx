@@ -1,5 +1,4 @@
 export async function getArticles() {
-  console.log("trying...");
   try {
     const response = await fetch("http://localhost:3000/articles", {
       method: "GET",
@@ -9,6 +8,7 @@ export async function getArticles() {
     });
     if (response.ok) {
       const data = await response.json();
+      console.log(data);
       return data.articles;
     } else console.error(response.status);
   } catch (error) {
