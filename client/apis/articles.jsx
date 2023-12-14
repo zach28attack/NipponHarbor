@@ -8,8 +8,8 @@ export async function getArticles() {
       },
     });
     if (response.ok) {
-      const articles = await response.json();
-      console.log(articles.headlines);
+      const data = await response.json();
+      return data.articles;
     } else console.error(response.status);
   } catch (error) {
     console.error(error);
