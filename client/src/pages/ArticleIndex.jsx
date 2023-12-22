@@ -2,22 +2,20 @@ import ArticleCard from "../components/articles/ArticleCard";
 import Class from "./ArticleIndex.module.css";
 import {getArticles} from "../../apis/ArticlesAPI";
 import {useEffect, useState} from "react";
+import {useContext} from "react";
+import {ArticlesContext} from "../../context/ArticlesContext";
 
 export default function ArticlesIndex() {
   const [articles, setArticles] = useState([]);
-  const [finishLoading, setFinishLoading] = useState(false);
+  const {articlesArr} = useContext(ArticlesContext);
 
-  const getAndSetArticles = async () => {
-    const data = await getArticles();
-    if (data) {
-      setArticles(data);
-      setFinishLoading(true);
-    }
+  const getAndSetArticles = () => {
+    setArticles(articlesArr);
   };
 
   useEffect(() => {
     getAndSetArticles();
-  }, []);
+  }, [articlesArr]);
 
   return (
     <div className={Class.container}>

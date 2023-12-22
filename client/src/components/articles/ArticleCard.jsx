@@ -2,7 +2,6 @@ import Class from "./ArticleCard.module.css";
 import {Link} from "react-router-dom";
 
 export default function ArticleCard({headline, img_url, url}) {
-  console.log(`https://www3.nhk.or.jp${img_url}`);
   return (
     <div className={Class.container}>
       <img src={`https://www3.nhk.or.jp${img_url}`} />

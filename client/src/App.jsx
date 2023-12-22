@@ -2,12 +2,16 @@ import Class from "./App.module.css";
 import {Outlet} from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 
+import {ArticlesArrProvider} from "../context/ArticlesContext";
+
 function App() {
   return (
-    <div className={Class.container}>
-      <Navbar />
-      <Outlet />
-    </div>
+    <ArticlesArrProvider>
+      <div className={Class.container}>
+        <Navbar />
+        <Outlet />
+      </div>
+    </ArticlesArrProvider>
   );
 }
 
